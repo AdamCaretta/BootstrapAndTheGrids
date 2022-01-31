@@ -19,7 +19,7 @@
 
 <body class="d-flex flex-column h-100">
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Bootstrap Grids</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -61,19 +61,18 @@
             </ul>
         </div>
     </div>
-    </nav>
+</nav>
 
     <main class="flex-shrink-0">
        <div class="container h-100 minHeight">
-           <!-- mb-1 gives a margin on the bottom -->
-           <ul class="nav nav-pills mb-1"> 
-               <li class="nav-item">
-                   <a href="Grid3.html" class="nav-link active" aria-current="page">Grid 3</a>
-               </li>
-               <li class="nav-item">
-                <a href="Grid3B.html" class="nav-link">Grid 3B</a>
+        <ul class="nav nav-pills mb-1"> 
+            <li class="nav-item">
+                <a href="Grid3.html" class="nav-link">Grid 3</a>
             </li>
-           </ul>
+            <li class="nav-item">
+             <a href="Grid3B.html" class="nav-link active" aria-current="page">Grid 3B</a>
+         </li>
+        </ul>
            <div class="row h-100">
                <!-- LEFT COLUMN -->
                <div class="col-7">
@@ -87,23 +86,33 @@
                     </div>
                </div>
                <!-- RIGHT COLUMN -->
-               <div class="col-5 h-100 d-flex flex-column justify-content-evenly">
+               <div class="col-5">
                    <!-- TOP RIGHT COLUMN -->
-                   <div class="bg-dark text-light h-50 p-2 overflow-auto">
-                    <p>Lorem ipsum dolor sit amet. Et odit laudantium qui eius minus aut nostrum expedita. Et deleniti maxime cum architecto dolore eos magnam vero ut debitis beatae ut voluptatum voluptatibus sit quia quas ut quia necessitatibus? Ut tempore animi et laboriosam accusamus eum quia autem ut nihil architecto. Sit expedita nostrum sed velit sunt  maiores necessitatibus qui beatae praesentium. </p>
-            
+                   <div class="bg-secondary text-light p-2">
+                       <!-- The below will add a search bar, and have Search please the placeholder in the  box -->
+                       <form class="d-flex">
+                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="search">
+                           <button class="btn-outline-light" type="submit">Search</button>
+                           <!-- REMEMBER btn -->
+
+                       </form>
                        
                     </div>
                     <!-- BOTTOM RIGHT COLUMN -->
-                    <div class="bg-dark text-light h-50 mt-2 p-2 overflow-hidden">
-                        <p>Lorem ipsum dolor sit amet. Et odit laudantium qui eius minus aut nostrum expedita. Et deleniti maxime cum architecto dolore eos magnam vero ut debitis beatae ut voluptatum voluptatibus sit quia quas ut quia necessitatibus? Ut tempore animi et laboriosam accusamus eum quia autem ut nihil architecto. Sit expedita nostrum sed velit sunt  maiores necessitatibus qui beatae praesentium. </p>
-                        
-
-
-                    </div>
-                    <div class="bg-dark text-light border border-top p-2">
-                        <button class="btn btn-light" type="button">Read More</button>
-                    </div>
+                    <div class="bg-dark text-light mt-2 p-2">
+                        <h5>More Articles</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Article One</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Article Twp</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Article Three</a>
+                            </li>
+                        </ul>
+                    </div>                    
                </div>
            </div>
        </div>
