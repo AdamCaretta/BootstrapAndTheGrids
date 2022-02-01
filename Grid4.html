@@ -64,8 +64,28 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container">
-           
+       <div class="container h-100 minHeight">
+           <div class="row h-100 row-cols-1 row-cols-md-3 mt-2 gy-1">
+               <!-- h-100 wont work rigth if there's no content. we wrap our content incase we to center of turn it into a flex box -->
+               <div class="col">
+                   <div class="bg-secondary text-light h-100">
+                        COL ONE
+                   </div>
+
+               </div>
+               <div class="col">
+                   <div class="bg-dark text-light h-100">
+                        COL TWO
+                   </div>
+
+               </div>
+               <div class="col">
+                   <div class="bg-secondary text-light h-100">
+                        COL THREE
+                   </div>
+
+               </div>
+           </div>
        </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
